@@ -1,14 +1,14 @@
 *{margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family: "Playwrite DE Grund", cursive;
+  
   }
 
   :root{--bgColor:rgb(36, 36, 61);
-    --light:rgba(77, 78, 113, 0.433);
+    --light:rgb(216, 217, 247);
     --lighter:rgba(133, 137, 181, 0.344);
     --pink-light:rgba(144, 92, 136, 0.405);
-    --backgr:rgba(222, 169, 169, 0.254);
+    --bgFidget:rgba(209, 207, 250, 0.254);
     --fontColor:rgb(34, 48, 107)
     }
 
@@ -16,3 +16,23 @@
     height: 100vh;
     background: var(--bgColor);
     }
+
+
+/*calender*/
+
+  .calendar{text-align: center;
+      animation: mymove 1s ease;
+      width:300px;
+      color: var(--light);
+      border: 1px solid var(--light);
+
+    background:var(--bgFidget);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px white;
+    margin: 0 0 10px 0;
+      }
+  .calendar hr{margin:10px 0;
+      border-color: var(--rose);}
+  .toDay{font-weight: bold;
+      font-size:1.5rem ;}
