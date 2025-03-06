@@ -5,7 +5,7 @@
   }
 
   :root{--bgColor:rgb(36, 36, 61);
-    --light:rgb(216, 217, 247);
+    --yellow:rgb(219, 222, 248);
     --lighter:rgba(133, 137, 181, 0.344);
     --pink-light:rgba(144, 92, 136, 0.405);
     --bgFidget:rgba(209, 207, 250, 0.254);
@@ -23,13 +23,13 @@
   .calendar{text-align: center;
       animation: mymove 1s ease;
       width:300px;
-      color: var(--light);
-      border: 1px solid var(--light);
+      color: var(--yellow);
+      border: 1px solid var(--yellow);
 
     background:var(--bgFidget);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px 5px white;
+    box-shadow: 0 0 10px 5px var(--yellow);
     margin: 0 0 10px 0;
       }
   .calendar hr{margin:10px 0;
