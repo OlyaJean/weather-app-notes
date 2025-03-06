@@ -16,16 +16,31 @@
     height: 100vh;
     background: var(--bgColor);
     }
+
+  #app{
+      width:100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
 /*Mututal charachteristics*/
-.calendar, .weather{
+.calendar, 
+.weather{
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px 5px var(--yellow);
   margin: 0 0 10px 0;
   width: 70vw;
   text-align: center;
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+  background:var(--bgFidget);
 }
-.calendar hr, .weather hr{
+.calendar hr, 
+.weather hr{
   margin:10px 0;
   border-color: var(--rose);
 }
@@ -33,12 +48,6 @@
 
 /*calender*/
 
-  .calendar{
-    color: var(--yellow);
-    border: 1px solid var(--yellow);
-    background:var(--bgFidget);
-    
-      }
   .toDay{font-weight: bold;
       font-size:1.5rem ;}
 
