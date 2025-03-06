@@ -16,23 +16,34 @@
     height: 100vh;
     background: var(--bgColor);
     }
+/*Mututal charachteristics*/
+.calendar, .weather{
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px var(--yellow);
+  margin: 0 0 10px 0;
+  width: 70vw;
+  text-align: center;
+}
+.calendar hr, .weather hr{
+  margin:10px 0;
+  border-color: var(--rose);
+}
 
 
 /*calender*/
 
-  .calendar{text-align: center;
-      animation: mymove 1s ease;
-      width:300px;
-      color: var(--yellow);
-      border: 1px solid var(--yellow);
-
+  .calendar{
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
     background:var(--bgFidget);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 5px var(--yellow);
-    margin: 0 0 10px 0;
+    
       }
-  .calendar hr{margin:10px 0;
-      border-color: var(--rose);}
   .toDay{font-weight: bold;
       font-size:1.5rem ;}
+
+
+ /*Weather*/
+  .temperature span{font-weight: bold;
+      font-size:1.5rem ;}
+ 
