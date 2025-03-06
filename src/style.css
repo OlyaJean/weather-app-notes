@@ -1,0 +1,18 @@
+*{margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Playwrite DE Grund", cursive;
+  }
+
+  :root{--bgColor:rgb(36, 36, 61);
+    --light:rgba(77, 78, 113, 0.433);
+    --lighter:rgba(133, 137, 181, 0.344);
+    --pink-light:rgba(144, 92, 136, 0.405);
+    --backgr:rgba(222, 169, 169, 0.254);
+    --fontColor:rgb(34, 48, 107)
+    }
+
+  body{width:100vw;
+    height: 100vh;
+    background: var(--bgColor);
+    }
