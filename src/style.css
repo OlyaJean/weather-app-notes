@@ -4,12 +4,12 @@
   
   }
 
-  :root{--bgColor:rgb(36, 36, 61);
-    --yellow:rgb(219, 222, 248);
+  :root{--bgColor:rgb(49, 49, 75);
+    --yellow:rgb(175, 179, 211);
     --lighter:rgba(133, 137, 181, 0.344);
     --pink-light:rgba(144, 92, 136, 0.405);
-    --bgFidget:rgba(209, 207, 250, 0.254);
-    --fontColor:rgb(34, 48, 107)
+    --bgFidget:rgba(117, 119, 157, 0.612);
+    --fontColor:rgba(243, 243, 247, 0.914);
     }
 
   body{width:100vw;
@@ -26,16 +26,17 @@
       align-items: center;
       gap: 20px;
     }
+
 /*Mututal charachteristics*/
 .calendar, 
 .weather{
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 5px var(--yellow);
+  box-shadow:inset 0 0 10px 5px var(--yellow);
   margin: 0 0 10px 0;
   width: 70vw;
   text-align: center;
-  color: var(--yellow);
+  color: var(--fontColor);
   border: 1px solid var(--yellow);
   background:var(--bgFidget);
 }

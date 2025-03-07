@@ -14,4 +14,8 @@ window.addEventListener('DOMContentLoaded',()=>{
 
 //Weather
 const myTemp = document.querySelector('.temperature')
-const weatherCondition = document.querySelector(".condition")
+const weatherCondition = document.querySelector(".condition");
+
+window.addEventListener('DOMContentLoaded',async ()=>{
+  navigator.geolocation.getCurrentPosition(gotLocation,declinedLocation)
+})
