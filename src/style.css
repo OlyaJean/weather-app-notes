@@ -125,3 +125,8 @@
     cursor: pointer;
     
     }
+
+    .sectionToDo{
+      display: flex;
+      flex-direction: column;
+    }

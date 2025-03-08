@@ -92,6 +92,17 @@ const todoDiv = document.querySelector(".todo");
 const sectionToDo = document.querySelector('.sectionToDo');
 const addButton = document.querySelector('.addItem');
 
+//Local Storage
+function showNotes(){
+  sectionToDo.innerHTML = localStorage.getItem('notes')
+};
+showNotes();
+
+function updateStorage(){
+   localStorage.setItem('notes',sectionToDo.innerHTML)
+}
+
+
 addButton.addEventListener('click', function(){
   const listDiv = document.createElement('div');
   const list = document.createElement('p');
@@ -116,4 +127,5 @@ addButton.addEventListener('click', function(){
  sectionToDo.appendChild(listDiv);
   todoDiv.appendChild(sectionToDo);
  
+  updateStorage();
  })
