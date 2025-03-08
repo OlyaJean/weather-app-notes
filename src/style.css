@@ -64,4 +64,28 @@
     }    
         
 
- 
+ /*Todo*/
+  .todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+ .todo section{display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width:100%
+  }
+
+ .addItem{
+  background-color: var(--fontColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border:none;
+  }
