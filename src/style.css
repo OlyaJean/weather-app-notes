@@ -130,3 +130,26 @@
       display: flex;
       flex-direction: column;
     }
+
+    .checkBtn:hover,.delBtn:hover{
+      background-color: var(--pink);
+  }
+  .checkBtn:active,.delBtn:active{
+      background-color: var(--pink-light);
+  }
+
+
+  /*toggle classes for check button*/
+
+    .checked{
+      width: 30px;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--purple);
+      cursor: pointer;
+      height: 30px;
+  }
+    .checked:hover{ background-color: var(--pink);}
+    .checked:active{ background-color: var(--pink-light);}    
+
+    .todoListCross{text-decoration: line-through;}

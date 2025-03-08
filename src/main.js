@@ -150,4 +150,22 @@ addButton.addEventListener('click', function(){
    });
   }
   
+});
+
+
+//Check and Uncheck todo list
+todoDiv.addEventListener('click',(e)=>{
+  if(e.target.classList == 'checkBtn'){
+      e.target.src = './check.png';
+      e.target.classList.add('checked');
+      e.target.classList.remove('checkBtn');
+      e.target.nextElementSibling.classList.add('todoListCross')
+      updateStorage();
+  }else if(e.target.classList == 'checked'){
+      e.target.src = './uncheck.png';
+      e.target.classList.add('checkBtn');
+      e.target.classList.remove('checked');
+      e.target.nextElementSibling.classList.remove('todoListCross')
+      updateStorage();
+  }
 })
