@@ -128,4 +128,26 @@ addButton.addEventListener('click', function(){
   todoDiv.appendChild(sectionToDo);
  
   updateStorage();
- })
+ });
+
+//check buttons
+ const checkButtons = document.querySelectorAll('.checkBtn');
+ console.log(checkButtons);
+
+ //delete note and save <p> input on key up
+
+ todoDiv.addEventListener('click',(e)=>{
+  if(e.target.classList == "delBtn"){
+  e.target.parentElement.remove();
+  updateStorage();
+  }else if(e.target.classList == 'todoList'){
+   e = document.querySelectorAll('.todoList');
+  
+   e.forEach(element => { element.onkeyup = function(){
+       updateStorage();
+   }
+       
+   });
+  }
+  
+})
