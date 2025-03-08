@@ -78,6 +78,7 @@
   width:100%
   }
 
+  /*Todo button*/
  .addItem{
   background-color: var(--fontColor);
   display: flex;
@@ -89,3 +90,5 @@
   cursor: pointer;
   border:none;
   }
+  .addItem:hover{background-color: var(--bgFidget);}
+  .addItem:active{background-color: var(--yellow);}
