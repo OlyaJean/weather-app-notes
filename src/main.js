@@ -51,25 +51,25 @@ async function gotLocation(position){
   
  switch(true){
   
-   case(outdoorCondition === 0 ):  cond.src = `./public/sunny.png`;
+   case(outdoorCondition === 0 ):  cond.src = `./sunny.png`;
    
    break;
-   case(outdoorCondition >= 1 && outdoorCondition <= 3):  cond.src = `./public/partlyCloudy.png`;
+   case(outdoorCondition >= 1 && outdoorCondition <= 3):  cond.src = `./partlyCloudy.png`;
    
    break;
-   case(outdoorCondition >= 45 && outdoorCondition < 51):  cond.src = `./public/mist.png`;
+   case(outdoorCondition >= 45 && outdoorCondition < 51):  cond.src = `./mist.png`;
    
    break;
-   case(outdoorCondition >= 51 && outdoorCondition < 71):  cond.src = `./public/rain.png`;
+   case(outdoorCondition >= 51 && outdoorCondition < 71):  cond.src = `./rain.png`;
 
    break;
-   case(outdoorCondition >= 71 && outdoorCondition < 95):  cond.src = `./public/cloudySnow.png`;
+   case(outdoorCondition >= 71 && outdoorCondition < 95):  cond.src = `./cloudySnow.png`;
    
    break;
-   case (outdoorCondition >= 95 ):  cond.src = `./public/thunder.png`;
+   case (outdoorCondition >= 95 ):  cond.src = `./thunder.png`;
    
    break;
-   default: cond.src = `./public/cloud.png`;
+   default: cond.src = `./cloud.png`;
  
  }
  weatherCondition.appendChild(cond);
@@ -84,3 +84,36 @@ function declinedLocation(){
   decline.textContent = `Problem to retrive data`
   myTemp.appendChild(decline)
 }
+
+
+//Todo section
+
+const todoDiv = document.querySelector(".todo");
+const sectionToDo = document.querySelector('.sectionToDo');
+const addButton = document.querySelector('.addItem');
+
+addButton.addEventListener('click', function(){
+  const listDiv = document.createElement('div');
+  const list = document.createElement('p');
+  const checkBtn = document.createElement('img');
+  const delBtn = document.createElement('img');
+
+  checkBtn.classList.add('checkBtn');
+ checkBtn.src = './uncheck.png';
+
+ delBtn.src = './delete.png';
+  delBtn.classList.add('delBtn');
+
+  list.classList.add('todoList');
+  list.setAttribute('contenteditable','true');
+
+
+  listDiv.classList.add('listSection');
+  listDiv.appendChild(checkBtn);
+  listDiv.appendChild(list);
+  listDiv.appendChild(delBtn);
+
+ sectionToDo.appendChild(listDiv);
+  todoDiv.appendChild(sectionToDo);
+ 
+ })
