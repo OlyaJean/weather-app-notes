@@ -92,3 +92,36 @@
   }
   .addItem:hover{background-color: var(--bgFidget);}
   .addItem:active{background-color: var(--yellow);}
+
+  /*Todo list*/
+  .listSection{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(251, 236, 251, 0.504);
+    border-radius: 10px;
+    margin: 5px;
+    margin-top: 10px;
+    padding: 5px ;
+    width: 100% 
+
+  }
+
+  .todoList{
+    background-color: rgba(255, 255, 255, 0.56);
+    width:80%;
+    color: purple;
+    border-radius: 5px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px ;}
+
+  .checkBtn,
+  .delBtn{
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(251, 236, 251, 0.504);
+    cursor: pointer;
+    
+    }
