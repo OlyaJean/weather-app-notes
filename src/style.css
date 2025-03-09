@@ -44,10 +44,24 @@
   color: var(--fontColor);
   border: 1px solid var(--light);
   background:var(--bgFidget);
-  animation: mymove 1s ease-out;
+  
 }
 
+
 /*Animation*/
+.header,
+.secondWeatherBlock{
+  animation: mymove 1s ease-out;
+}
+.calendar{
+  animation: mymove 1.1s ease-out;
+}
+.weather{
+  animation: mymove 1.2s ease-out;
+}
+.todo{
+  animation: mymove 1.3s ease-out;
+}
 @keyframes mymove{
   0%{translate: -100%;
   visibility: hidden;}
