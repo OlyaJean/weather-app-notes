@@ -7,9 +7,9 @@
   :root{--bgColor:rgb(49, 49, 75);
     --light:rgb(175, 179, 211);
     --lighter:rgba(133, 137, 181, 0.344);
-    --pink-light:rgba(144, 92, 136, 0.405);
+    --border:rgba(170, 168, 229, 0.405);
     --bgFidget:rgba(117, 119, 157, 0.612);
-    --fontColor:rgba(243, 243, 247, 0.914);
+    --fontColor:rgba(227, 232, 247, 0.914);
     }
 
   body{width:100vw;
@@ -46,7 +46,7 @@
 .calendar hr, 
 .weather hr{
   margin:10px 0;
-  border-color: var(--rose);
+  border-color: var(--border);
 }
 
 
@@ -64,6 +64,10 @@
       width: 60px;
       margin:0 calc(50% - 30px) 
     }    
+  
+  .weatherLink{
+    color: var(--fontColor);
+  }  
         
 
  /*Todo*/
@@ -165,6 +169,7 @@
     /*Header*/
     .header h1{
       font-size:medium;
+      
     }
 
     /*Bigger Screen*/
