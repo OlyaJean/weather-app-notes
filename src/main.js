@@ -6,11 +6,13 @@ const toDate = document.querySelector('.toDate')
 const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 const today = new Date();
 
-window.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded',()=>{
+ 
   toDay.textContent = days[today.getDay()]
   const month = today.toLocaleString('default',{month:'long'})
   toDate.textContent = `${month} ${today.getDate()}, ${today.getFullYear()}`
 })
+
 
 //Weather
 const myTemp = document.querySelector('.temperature')
@@ -30,7 +32,7 @@ return promiseJson;
 }
 
 //geolocation question popup
-window.addEventListener('DOMContentLoaded',async ()=>{
+document.addEventListener('DOMContentLoaded',async ()=>{
   navigator.geolocation.getCurrentPosition(gotLocation,declinedLocation)
 });
 
