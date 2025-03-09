@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded',async ()=>{
 
     //Today's weather
     const dateP1 = document.createElement('p');
+    dateP1.classList.add('dates')
     const date1 = result.daily.time[0];
     dateP1.textContent = date1;
     today.appendChild(dateP1);
@@ -78,6 +79,7 @@ document.addEventListener('DOMContentLoaded',async ()=>{
 
       //Tomorrow's weather
       const dateP2 = document.createElement('p');
+      dateP2.classList.add('dates')
       const date2 = result.daily.time[1];
       dateP2.textContent = date2;
       tomorrow.appendChild(dateP2);
@@ -129,6 +131,7 @@ document.addEventListener('DOMContentLoaded',async ()=>{
         //After Tomorrow's Weather
 
         const dateP3 = document.createElement('p');
+        dateP3.classList.add('dates')
         const date3 = result.daily.time[2];
         dateP3.textContent = date3;
         afterTom.appendChild(dateP3);
