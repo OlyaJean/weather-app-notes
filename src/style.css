@@ -44,7 +44,18 @@
   color: var(--fontColor);
   border: 1px solid var(--light);
   background:var(--bgFidget);
+  animation: mymove 1s ease-out;
 }
+
+/*Animation*/
+@keyframes mymove{
+  0%{translate: -100%;
+  visibility: hidden;}
+
+ 100%{
+visibility: visible;}
+}
+
 .calendar hr, 
 .weather hr{
   margin:10px 0;
