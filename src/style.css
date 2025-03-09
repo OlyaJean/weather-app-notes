@@ -75,6 +75,14 @@
     right: 15px;
 
   }  
+  .weatherLink:hover,
+  .back:hover{
+    color: var(--light);
+  }
+  .weatherLink:active,
+  .back:active{
+    color: var(--lighter);
+  }
   .weather,
   .secondWeatherBlock{
     position: relative;
@@ -102,7 +110,7 @@
 
   /*Todo button*/
  .addItem{
-  background-color: var(--fontColor);
+  background-color: rgba(251, 236, 251, 0.504);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -112,8 +120,8 @@
   cursor: pointer;
   border:none;
   }
-  .addItem:hover{background-color: var(--bgFidget);}
-  .addItem:active{background-color: var(--light);}
+  .addItem:hover{background-color: var(--light);}
+  .addItem:active{background-color: var(--lighter);}
 
   /*Todo list*/
   .listSection{
@@ -154,10 +162,10 @@
     }
 
     .checkBtn:hover,.delBtn:hover{
-      background-color: var(--pink);
+      background-color: var(--light);
   }
   .checkBtn:active,.delBtn:active{
-      background-color: var(--pink-light);
+      background-color: var(--lighter);
   }
 
 
@@ -167,12 +175,12 @@
       width: 30px;
       border: none;
       border-radius: 5px;
-      background-color: var(--purple);
+      background-color: rgba(251, 236, 251, 0.504);
       cursor: pointer;
       height: 30px;
   }
-    .checked:hover{ background-color: var(--pink);}
-    .checked:active{ background-color: var(--pink-light);}    
+    .checked:hover{ background-color: var(--light);}
+    .checked:active{ background-color: var(--lighter);}    
 
     .todoListCross{text-decoration: line-through;}
 
@@ -181,14 +189,16 @@
     .header h1{
       font-size:medium;
      
-      
     }
+
 /*Second html*/
    
 
     .dates{
      font-size: 1.5rem; 
-     
+    }
+    .secondWeatherBlock h1{
+      padding: 15px 0;
     }
 
     .today,
